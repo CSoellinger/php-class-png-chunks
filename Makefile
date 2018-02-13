@@ -19,7 +19,7 @@ test: install lint
 
 release:
 	@printf "releasing ${VERSION}..."
-	@printf '<?php\nglobal $$SEGMENT_VERSION;\n$$SEGMENT_VERSION = "%b";\n?>' ${VERSION} > ./lib/Segment/Version.php
+	# @printf '<?php\nglobal $$SEGMENT_VERSION;\n$$SEGMENT_VERSION = "%b";\n?>' ${VERSION} > ./lib/Segment/Version.php
 	@node -e "var fs = require('fs'), pkg = require('./composer'); pkg.version = '${VERSION}'; fs.writeFileSync('./composer.json', JSON.stringify(pkg, null, '\t'));"
 	@git changelog -t ${VERSION}
 	@git release ${VERSION}
