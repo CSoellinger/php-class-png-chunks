@@ -1,4 +1,4 @@
-install: vendor
+install: vendor phpunit.phar phpmd.phar
 
 vendor: composer.phar
 	@php ./composer.phar install
