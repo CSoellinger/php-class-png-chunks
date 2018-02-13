@@ -1,6 +1,8 @@
 .php_cs.cache
 coverage
 build
+phpmd.phar
+phpunit-5.phar
 
 # Created by https://www.gitignore.io/api/composer
 
