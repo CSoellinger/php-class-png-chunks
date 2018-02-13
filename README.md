@@ -1,4 +1,4 @@
-# PHP PngChunk Class
+# PHP PngChunk Class [![Build Status](https://travis-ci.org/CSoellinger/php-class-png-chunks.svg?branch=master)](https://travis-ci.org/CSoellinger/php-class-png-chunks)
 
 Get, add or remove chunks to PNG. This class is more a personal helper for other projects but could be nice for others too. Feel free to extend the code with new features.
 
