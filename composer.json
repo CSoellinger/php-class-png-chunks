@@ -1,6 +1,6 @@
 {
     "name": "pixelcrab/png-chunks",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Simple PHP class to handle(get, add, remove) PNG chunks.",
     "minimum-stability": "dev",
     "license": "MIT",

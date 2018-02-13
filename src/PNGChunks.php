@@ -11,7 +11,6 @@
  * @category    PHPPNG
  * @package     PNGChunks
  * @author      Christopher Söllinger <cs@pixelcrab.at>
- * @version     1.0.0
  */
 
 namespace PHPPNG\PNGChunks;
