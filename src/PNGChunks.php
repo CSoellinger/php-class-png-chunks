@@ -50,7 +50,7 @@ class PNGChunks
      *
      * @return PngChunks $this
      */
-    private function readChunks(): PngChunks
+    private function readChunks()
     {
         $this->fileReader->reOpenFile();
 
@@ -244,7 +244,7 @@ class PNGChunks
      * @param string $type Chunktype, by default tEXt
      * @return PngChunks $this
      */
-    public function addChunk($key, $text, $type = 'tEXt'): PngChunks
+    public function addChunk($key, $text, $type = 'tEXt')
     {
         $file = $this->fileReader->getFilePath();
 
@@ -272,7 +272,7 @@ class PNGChunks
      * @param string $type Chunktype, by default tEXt
      * @return string
      */
-    private function createChunk($key, $text, $type = 'tEXt'): string
+    private function createChunk($key, $text, $type = 'tEXt')
     {
         $chunkdata = $key . "\0" . $text;
         $crc = pack("N", crc32($type . $chunkdata));
