@@ -8,8 +8,6 @@ matrix:
 
 script:
   - make test
-  - ./vendor/bin/phpunit
-  - ./vendor/bin/phpcs --standard=PSR2 ./src/
 
 after_success:
   - travis_retry php ./vendor/bin/php-coveralls -v
